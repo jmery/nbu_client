@@ -35,5 +35,6 @@ do_install() {
 
   # copy over all the entire /usr & /etc trees from cache into the package
   cp -r $HAB_CACHE_SRC_PATH/$pkg_dirname/* $pkg_prefix/
+  chmod 0644 $pkg_prefix/usr/openv/netbackup/bp.conf
 
 }
