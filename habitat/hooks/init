@@ -1,0 +1,8 @@
+#!/bin/sh
+
+exec 2>&1
+
+# TODO: Copy bp.conf to /usr/openv/netbackup & link all directories/files
+ln -s {{pkg.path}}/usr/openv/netbackup/bp.conf {{pkg.svc_config_path}}/bp.conf
+
+ln -s {{pkg.path}}/usr/openv /usr/openv
